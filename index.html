@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>vined</title>
+
+    <script src="static/js/MediaStreamRecorder.js"></script>
+    <script src="static/js/gif-recorder.js"></script>
+    <!-- for Edige/FF/Chrome/Opera/etc. getUserMedia support -->
+    <script src="https://cdn.rawgit.com/webrtc/adapter/master/adapter.js"></script>
+    
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+    <h2>
+        vined*
+    </h2>
+
+    <div>
+
+        <input type="hidden" id="video-width" value="320">
+        <input type="hidden" id="video-height" value="240">
+        <input type="hidden" id="time-interval" value="2000">
+
+        <button id="start-recording">
+          <i class="fa fa-play"></i>
+        </button>
+
+        <button id="publish-recording" disabled>
+          <i class="fa fa-rss"></i>
+        </button>
+    </div>
+    <div id="videos-container">
+    </div>
+    
+    <script src="static/js/record.js"></script>
+    
+    <h6>
+    * by using this website, you confirm that you are the sole owner of all content you submit.
+    </h6>
+</body>
+</html>
